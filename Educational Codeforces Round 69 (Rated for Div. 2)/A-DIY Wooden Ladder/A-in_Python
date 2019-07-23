@@ -1,0 +1,12 @@
+Problem Link
+
+https://codeforces.com/contest/1197/problem/A
+
+Problem Code
+
+for _ in range(int(input())):
+    n=int(input())
+    x=list(map(int,input().split()))
+    x.sort(reverse=True)
+    print(min(x[1]-1,n-2))
+
