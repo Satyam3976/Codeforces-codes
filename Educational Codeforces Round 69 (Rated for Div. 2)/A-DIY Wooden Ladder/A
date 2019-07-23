@@ -1,0 +1,38 @@
+Problem Link
+
+https://codeforces.com/contest/1197/problem/A
+
+Problem Code
+
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+typedef vector<long long> vll;
+//Satyam Chaudhary https://github.com/satyam3976
+#define pb push_back
+#define f(i,s,n) for(l i=s;i<n;i++)
+#define fe(i,s,n) for(l i=s;i<=n;i++)
+#define fr(i,s,n) for(l i=s;i>n;i--)
+#define fre(i,s,n) for(l i=s;i>=n;i--)
+ 
+int main()
+{
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        ll n;
+        cin>>n;
+        vll v;
+        f(i,0,n)
+        {
+            ll a;
+            cin>>a;
+            v.pb(a);
+        }
+        sort(v.begin(),v.end());
+        ll x=v[v.size()-2];
+        ll z=min(x-1,n-2);
+        cout<<z<<endl;
+    }
+}
